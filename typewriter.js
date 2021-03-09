@@ -2,9 +2,10 @@ const sentence = "hello there form lighthouse labs";
 
 const typeWriter = (sentence) => {
   let delay = 0;
-  for (const char of sentence)
+  for (let i = 0; i < sentence.length; i ++) {
     setTimeout(() => {
-      process.stdout.write(char)
+      process.stdout.write(sentence[i])
     }, delay += 50)
     }
-typeWriter(sentence);
+  }
+typeWriter('hello its sarah');
